@@ -80,3 +80,45 @@ body {
 .time-label { padding: 15px; font-size: 0.8rem; color: #94a3b8; text-align: center; }
 .time-slot { border-left: 1px solid var(--border); padding: 10px; min-height: 40px; outline: none; }
 .time-slot:focus { background: rgba(99, 102, 241, 0.1); }
+
+
+/* Ajuste para los inputs del horario */
+.time-slot-input {
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--border);
+  color: white;
+  padding: 15px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.time-slot-input:focus {
+  background: rgba(99, 102, 241, 0.05);
+  box-shadow: inset 0 0 10px rgba(99, 102, 241, 0.1);
+}
+
+.save-status {
+  font-size: 0.75rem;
+  color: #10b981; /* Verde éxito */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 15px;
+  opacity: 0.8;
+}
+
+.scroll-custom {
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+/* Scrollbar estética */
+.scroll-custom::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll-custom::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
