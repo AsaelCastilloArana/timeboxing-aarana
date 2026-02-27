@@ -1,0 +1,82 @@
+:root {
+  --primary: #6366f1;
+  --bg: #0f172a;
+  --card: rgba(30, 41, 59, 0.7);
+  --text: #f8fafc;
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top right, #1e1b4b, #0f172a);
+  color: var(--text);
+}
+
+/* Login Moderno */
+.login-screen {
+  height: 100vh; display: flex; align-items: center; justify-content: center;
+}
+.login-box {
+  background: var(--card);
+  padding: 40px; border-radius: 24px; border: 1px solid var(--border);
+  backdrop-filter: blur(10px); width: 320px; text-align: center;
+}
+.dot { color: var(--primary); }
+.input-field {
+  background: rgba(0,0,0,0.2); border-radius: 12px; margin: 15px 0;
+  display: flex; align-items: center; padding: 10px 15px; gap: 10px;
+}
+.input-field input {
+  background: none; border: none; color: white; outline: none; width: 100%;
+}
+.primary-btn {
+  background: var(--primary); color: white; border: none; width: 100%;
+  padding: 12px; border-radius: 12px; font-weight: 600; cursor: pointer;
+  transition: transform 0.2s;
+}
+.primary-btn:hover { transform: translateY(-2px); }
+
+/* Dashboard */
+.app-container { padding: 20px; max-width: 1200px; margin: 0 auto; }
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 30px; padding: 10px;
+}
+
+.main-content {
+  display: grid; grid-template-columns: 350px 1fr; gap: 25px;
+}
+
+.glass-card {
+  background: var(--card); border: 1px solid var(--border);
+  padding: 20px; border-radius: 20px; margin-bottom: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.task-input {
+  width: 90%; background: none; border: none; border-bottom: 1px solid var(--border);
+  color: white; padding: 10px; margin-bottom: 10px; outline: none;
+}
+
+.brain-input {
+  width: 100%; height: 250px; background: none; border: none;
+  color: #94a3b8; resize: none; outline: none; line-height: 1.6;
+}
+
+/* Schedule */
+.schedule-section {
+  background: var(--card); border-radius: 20px; overflow: hidden;
+  border: 1px solid var(--border);
+}
+.schedule-header {
+  display: grid; grid-template-columns: 80px 1fr 1fr;
+  background: rgba(0,0,0,0.3); padding: 15px; font-weight: bold;
+}
+.hour-row {
+  display: grid; grid-template-columns: 80px 1fr 1fr;
+  border-bottom: 1px solid var(--border);
+}
+.time-label { padding: 15px; font-size: 0.8rem; color: #94a3b8; text-align: center; }
+.time-slot { border-left: 1px solid var(--border); padding: 10px; min-height: 40px; outline: none; }
+.time-slot:focus { background: rgba(99, 102, 241, 0.1); }
