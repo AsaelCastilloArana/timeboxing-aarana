@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { Lock, User, CheckCircle2, Brain, Calendar, LogOut } from 'lucide-react';
 
-// --- COMPONENTE LOGIN ---
+
 const Login = ({ onLogin }) => {
   const [email, setEmail] = useState('');
   return (
@@ -26,7 +26,7 @@ const Login = ({ onLogin }) => {
   );
 };
 
-// --- COMPONENTE DASHBOARD ---
+
 const Dashboard = ({ user, onLogout }) => {
   const [tasks, setTasks] = useState(["", "", ""]);
   const [notes, setNotes] = useState("");
@@ -96,7 +96,7 @@ const Dashboard = ({ user, onLogout }) => {
   );
 };
 
-// --- APP PRINCIPAL ---
+
 export default function App() {
   const [user, setUser] = useState(null);
 

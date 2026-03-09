@@ -6,7 +6,7 @@ const Login = ({ onLogin }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email) onLogin(email); // Simulación de login
+    if (email) onLogin(email); 
   };
 
   return (
